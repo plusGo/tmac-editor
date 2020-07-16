@@ -1,0 +1,41 @@
+Arguments: 
+  D:\install-soft\nodejs\node.exe C:\Users\menghonglin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  D:\workspace\tmac-editor\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;D:\install-soft\apache-maven-3.6.1\bin;%Java_Home%\bin;%Java_Home%\jre\bin;D:\install-soft\gradle-5.6\bin;D:\install-soft\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\menghonglin\AppData\Local\Microsoft\WindowsApps;C:\Users\menghonglin\AppData\Roaming\npm;
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.26.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)
+
+npm manifest: 
+  {
+    "name": "babel-typescript-sample",
+    "version": "0.7.2",
+    "license": "MIT",
+    "scripts": {
+      "type-check": "tsc --noEmit",
+      "type-check:watch": "npm run type-check -- --watch",
+      "build": "npm run build:types && npm run build:js",
+      "build:types": "tsc --emitDeclarationOnly",
+      "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+    },
+    "devDependencies": {
+      "typescript": "^3.7.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
